@@ -1,7 +1,131 @@
 <div class="heading">
-  <h1>Partakers Blog</h1>
-  <h2>A short paragraph explaining the website. A short paragraph explaining the website. A short paragraph explaining the website.</h2>
-
+  <h1 class="an-2">Partakers Blog</h1>
+  <h2>
+    A short paragraph explaining the website. A short paragraph explaining the
+    website. A short paragraph explaining the website.
+  </h2>
 </div>
 
+<div class="container_container">
+  <div class="container">
+    <!--Heading-->
+    <div class="content_heading">
+      <h1 class="an-2">Partakers Blog</h1>
 
+      <h3 class="an-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iste ea
+        eligendi pariatur voluptatem accusamus sapiente alias dolores
+        doloremque, dolorem officiis consectetur, fugit qui illo voluptatum
+        reprehenderit assumenda illum a!
+      </h3>
+    </div>
+
+    <!--Information Cards-->
+    <!--Image Left Text Right-->
+    <div class="cards_imgs">
+      <!--Image Right Text Left-->
+      <div class="box_container">
+        <div class="row">
+          <div class="col-md-6 col-xs-6 text-right">
+            <img
+              src="../../../assets/img1.jpg"
+              style="height: 250px; border-radius: 25px"
+            />
+          </div>
+          <div class="col-md-6 col-xs-6 text">
+            <h1>Heading 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+              amet. In, aspernatur harum maiores dignissimos consequatur at enim
+              corrupti porro numquam facere quaerat, delectus sit sequi adipisci
+              non consequuntur provident.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Image Left Text Right-->
+      <div class="box_container">
+        <div class="row">
+          <div class="col-md-6 col-xs-6 text">
+            <h1>Heading 2</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+              amet. In, aspernatur harum maiores dignissimos consequatur at enim
+              corrupti porro numquam facere quaerat, delectus sit sequi adipisci
+              non consequuntur provident.
+            </p>
+          </div>
+          <div class="col-md-6 col-xs-6 text-left">
+            <img
+              src="../../../assets/img2.jpg"
+              style="height: 250px; border-radius: 25px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="box_container">
+        <div class="row">
+          <div class="col-md-6 col-xs-6 text-right">
+            <img
+              src="../../../assets/img3.jpg"
+              style="height: 250px; border-radius: 25px"
+            />
+          </div>
+          <div class="col-md-6 col-xs-6 text">
+            <h1>Heading 3</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+              amet. In, aspernatur harum maiores dignissimos consequatur at enim
+              corrupti porro numquam facere quaerat, delectus sit sequi adipisci
+              non consequuntur provident.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box_container">
+        <div class="row">
+          <div class="col-md-6 col-xs-6 text">
+            <h1>Heading 4</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+              amet. In, aspernatur harum maiores dignissimos consequatur at enim
+              corrupti porro numquam facere quaerat, delectus sit sequi adipisci
+              non consequuntur provident.
+            </p>
+          </div>
+          <div class="col-md-6 col-xs-6 text-left">
+            <img
+              src="../../../assets/img4.jpg"
+              style="height: 250px; border-radius: 25px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content_heading">
+      <h1>Latest Posts</h1>
+    </div>
+
+    <div class="blog_grid">
+     <div *ngFor="let blog of blogs; let index i" class="single_card">
+       <mat-card>
+         <img mat-card-image src="{{ blog?.fields?.mainImage?.fields?.file?.url }}">
+         <mat-card-title>{{ blog?.fields?.title }}</mat-card-title>
+         <mat-card-subtitle>{{ blog?.fields?.subtitle }}</mat-card-subtitle>
+       </mat-card>
+     </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: Partakers & Marnus Coetzee
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->

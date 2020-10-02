@@ -13,14 +13,24 @@ export class ContentfulService {
 
   constructor() { }
 
-  getCourses(query?: object): Promise<Entry<any>[]> {
+  getLatestBlogs(query?: object): Promise<Entry<any>[]> {
     return this.client.getEntries(Object.assign({
-      content_type: 'blogPost'
+      content_type: 'blogPost',
+      order: '-sys.createdAt',
+      limit: 4
     }, query))
     .then(res => res.items);
   }
 
-  getCourse(courseId): Promise<Entry<any>> {
+  getBlogs(query?: object): Promise<Entry<any>[]> {
+    return this.client.getEntries(Object.assign({
+      content_type: 'blogPost',
+      order: '-sys.createdAt'
+    }, query))
+    .then(res => res.items);
+  }
+
+  getBlog(courseId): Promise<Entry<any>> {
     return this.client.getEntries(Object.assign({
      content_type: 'blogPost'
     }, {'sys.id': courseId}))
