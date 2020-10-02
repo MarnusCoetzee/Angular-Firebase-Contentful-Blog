@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "partakers-blog": {
+      "hosting": {
+        "PartakersBlog": [
+          "partakers-blog"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100vh; /* if you don't want it to take up the full screen, reduce this number */
+  overflow: auto;
+  background-size: cover;
+  background-image: url(../../../assets/photo-1499652848871-1527a310b13a.jpg);
+  background-color: whitesmoke;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  margin-bottom: -2rem;
+}
+
+.heading h1 {
+  font-style: normal;
+  font-weight: bold;
+  color: #eee;
+  font-size: 46px;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-top: -20rem;
+}
+
+.heading h2 {
+  font-style: normal;
+  font-weight: normal;
+  color: #eee;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  max-width: 75%;
+  margin-top: 1rem;
+}
