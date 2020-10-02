@@ -1,1 +1,22 @@
-<p>blog-post works!</p>
+<div class="wrapper">
+  <div class="space">
+
+  </div>
+  <div class="container">
+
+    <div *ngIf="isLoading">
+      <mat-spinner></mat-spinner>
+    </div>
+
+    <div *ngIf="!isLoading">
+      <div class="blog_content">
+        <img src="{{ blogPost?.fields?.mainImage?.fields?.file?.url }}">
+        <h1>{{ blogPost?.fields?.title }}</h1>
+        <h2>{{ blogPost?.fields?.subtitle }}</h2>
+        <div [innerHTML]="blogPost?.fields?.blogTextContent | mdToHtml"></div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

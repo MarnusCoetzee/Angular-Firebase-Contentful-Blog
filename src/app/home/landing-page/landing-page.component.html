@@ -104,7 +104,7 @@
     </div>
 
     <div class="content_heading">
-      <h1>Latest Posts</h1>
+      <h1>Latest Blogs</h1>
     </div>
 
     <div class="blog_grid">
@@ -113,6 +113,7 @@
          <img mat-card-image src="{{ blog?.fields?.mainImage?.fields?.file?.url }}">
          <mat-card-title>{{ blog?.fields?.title }}</mat-card-title>
          <mat-card-subtitle>{{ blog?.fields?.subtitle }}</mat-card-subtitle>
+         <button mat-raised-button (click)="onClickNavigateArticle(blog?.sys?.id)">Read More</button>
        </mat-card>
      </div>
     </div>

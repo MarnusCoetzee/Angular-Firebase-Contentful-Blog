@@ -1,0 +1,31 @@
+.space {
+  height: 2rem;
+}
+
+.container {
+  background-color: white;
+  border-radius: 25px;
+  min-height: 50vh;
+}
+
+.blog_content img {
+  max-height: 50vh;
+  width: 60%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.blog_content h1 {
+  margin-left: 20%;
+  font-size: 46px;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.blog_content h2 {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 22px;
+  margin-top: 1rem;
+  font-weight: 500;
+}

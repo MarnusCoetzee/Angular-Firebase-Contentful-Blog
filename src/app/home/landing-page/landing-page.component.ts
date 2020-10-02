@@ -42,4 +42,8 @@ export class LandingPageComponent implements OnInit {
       delay: (el, i) => 250 * (i + 1),
     });
   }
+
+  onClickNavigateArticle(id: string) {
+    this.router.navigate(['blog/post', id]);
+  }
 }

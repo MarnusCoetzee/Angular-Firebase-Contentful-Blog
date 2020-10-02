@@ -89,13 +89,32 @@
 }
 
 .blog_grid img {
-  max-height: 40vh;
+  max-height: 325px;
+  display: grid;
+  grid-auto-rows: 1fr;
 }
 
 .blog_grid button {
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
+}
+
+.single_card mat-card-subtitle {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.single_card button {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  position: absolute;
+  right: 20px;
+  left: 20px;
+  bottom: 20px;
+  height: 46px;
+  background-color: lightgray;
 }
 
 @media only screen and (max-width: 600px) {
